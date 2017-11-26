@@ -16,7 +16,10 @@
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js && npm run build:bxs && npm run build:components && cp -rf docs dist",
     "build:bxs": "node build/build:bxs.js",
-    "build:components": "node build/build:components.js"
+    "build:components": "node build/build:components.js",
+    "release:major": "npm version major && npm run build && npm publish && git push",
+    "release:minor": "npm version minor && npm run build && npm publish && git push",
+    "release:patch": "npm version patch && npm run build && npm publish && git push"
   },
   "dependencies": {},
   "devDependencies": {
