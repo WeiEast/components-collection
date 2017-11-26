@@ -1,0 +1,33 @@
+// 设置 input placeholder 颜色
+.placeholder(@size: 15px,@color: #ccc,@lineheight: normal) {
+  &:-moz-placeholder{
+    font-size: @size;
+    color: @color;
+    font-weight: normal;
+  } // Firefox 4-18
+  &::-moz-placeholder{
+    font-size: @size;
+    color: @color;   // Firefox 19+
+    opacity: 1;
+    font-weight: normal;
+  }
+  &:-ms-input-placeholder{
+    font-size: @size;
+    color: @color;
+    font-weight: normal;
+  } // Internet Explorer 10+
+  &::-webkit-input-placeholder{
+    font-size: @size;
+    color: @color;
+    font-weight: normal;
+    line-height: @lineheight;
+  } // Safari and Chrome
+}
+// 设置 input 通用样式
+.input(){
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  appearance: none;
+  background-color: transparent;
+}

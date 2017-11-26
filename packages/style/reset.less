@@ -1,0 +1,48 @@
+// mixin
+@import "./base/mixin/text";
+@import "./base/mixin/flexbox";
+@import "./base/mixin/layout";
+@import "./base/mixin/form";
+
+// variable
+@import "./base/variable/global";
+@import "./base/variable/color";
+
+html {
+  text-size-adjust: 100%;
+  font-size: 75px;
+}
+
+body {
+  font-family: @weuiFontDefault;
+  font-size: 16px;
+  line-height: 1.25;
+  user-select: none; /* 禁止复制、选中文本 */
+  -webkit-touch-callout: none; /* 禁用系统默认菜单, 防止长时间按住页面闪退 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* 覆盖系统默认的高亮 */
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul,ol{
+  list-style-type: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+// icon
+@import "./icon/bxui-font";
