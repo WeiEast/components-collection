@@ -70,116 +70,113 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = function(originalModule) {
-	if(!originalModule.webpackPolyfill) {
-		var module = Object.create(originalModule);
-		// module.parent = undefined by default
-		if(!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			get: function() {
-				return module.l;
-			}
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			get: function() {
-				return module.i;
-			}
-		});
-		Object.defineProperty(module, "exports", {
-			enumerable: true,
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+__webpack_require__(1);
+
+var _Toast = __webpack_require__(2);
+
+var _Toast2 = _interopRequireDefault(_Toast);
+
+var _MessageBox = __webpack_require__(5);
+
+var _MessageBox2 = _interopRequireDefault(_MessageBox);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+  Toast: _Toast2.default,
+  MessageBox: _MessageBox2.default
 };
-
+module.exports = exports['default'];
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_reset_less__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_reset_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_reset_less__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Toast_Toast__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_MessageBox_MessageBox__ = __webpack_require__(6);
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  Toast: __WEBPACK_IMPORTED_MODULE_1__components_Toast_Toast__["a" /* default */],
-  MessageBox: __WEBPACK_IMPORTED_MODULE_2__components_MessageBox_MessageBox__["a" /* default */]
-});
-module.exports = exports['default'];
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)(module)))
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function () {
+  (0, _info2.default)('Toast');
+};
+
+__webpack_require__(3);
+
+var _info = __webpack_require__(4);
+
+var _info2 = _interopRequireDefault(_info);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = exports['default'];
 
 /***/ }),
 /* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Toast_less__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Toast_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Toast_less__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_utils__ = __webpack_require__(5);
-
-
-/* harmony default export */ __webpack_exports__["a"] = (function () {
-  console.log('Toast' + __WEBPACK_IMPORTED_MODULE_1__utils_utils__["a" /* default */].name);
-});
-module.exports = exports['default'];
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)(module)))
-
-/***/ }),
-/* 4 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 5 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var utils = {
-  name: '工具类'
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var info = function info(message) {
+  var name = 'info';
+  alert(name + message);
 };
-/* harmony default export */ __webpack_exports__["a"] = (utils);
+exports.default = info;
 module.exports = exports['default'];
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)(module)))
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function () {
+  console.log('MessageBox');
+};
+
+__webpack_require__(6);
+
+module.exports = exports['default'];
 
 /***/ }),
 /* 6 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__MessageBox_less__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__MessageBox_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__MessageBox_less__);
-
-/* harmony default export */ __webpack_exports__["a"] = (function () {
-  console.log('MessageBox');
-});
-module.exports = exports['default'];
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)(module)))
-
-/***/ }),
-/* 7 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

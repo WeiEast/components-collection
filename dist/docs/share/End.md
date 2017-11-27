@@ -1,4 +1,6 @@
-## [docsify](https://docsify.js.org/#/quickstart)
+## 文档与优化
+
+## 文档[docsify](https://docsify.js.org/#/quickstart)
 
 ### 第一步
 ```bash
@@ -15,3 +17,7 @@ docsify init ./docs
 
 ### 第四步
 开启webServer访问
+
+## 优化
+单个组件cdn引入方式，如何避免与其它组件重名？如Swiper？
+如何减少文件体积？

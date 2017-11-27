@@ -21,15 +21,15 @@ module.exports = function (isMixed) {
     'process.env.NODE_ENV': '"production"'
   }));
   !isMixed && plugins.push(extractLessPlugin);
-  plugins.push(new webpack.optimize.UglifyJsPlugin({
-    compress: {
-      warnings: true,
-      drop_console: true,
-      // dead_code: false,
-      // drop_debugger: true,
-      // passes: 2
-    }
-  }));
+  // plugins.push(new webpack.optimize.UglifyJsPlugin({
+  //   compress: {
+  //     warnings: true,
+  //     drop_console: true,
+  //     // dead_code: false,
+  //     // drop_debugger: true,
+  //     // passes: 2
+  //   }
+  // }));
   if (config.oss && config.oss.enable) {
     const AliOSSPlugin = require('webpack-alioss-plugin')
     plugins.push(new AliOSSPlugin({

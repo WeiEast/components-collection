@@ -3,3 +3,8 @@
 - Components
   - [Toast](/components/Toast.md)
   - [MessageBox](/components/MessageBox.md)
+- 如何搭建组件库
+  - [1.为什么要搭建组件库?](/share/Why.md)
+  - [2.我们希望得到的结果?](/share/Result.md)
+  - [3.怎么实现?](/share/How.md)
+  - [4.文档与优化](/share/End.md)

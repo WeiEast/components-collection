@@ -1,8 +1,4 @@
-export function logger (message) {
-  var name = 'logger';
-  alert(name + message);
-}
-export function error (message) {
-  var name = 'error';
-  alert(name + message);
-}
+import info from './logger/info'
+import error from './logger/error'
+
+export default {info, error};

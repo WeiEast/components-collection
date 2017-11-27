@@ -5,6 +5,11 @@
   ],
   "plugins": [
     "transform-runtime",
-     "add-module-exports"
+    ["import", {
+      "libraryName": "bxs-ui",
+      "libraryDirectory": "dist/components",
+      "style": false
+    }],
+    "add-module-exports"
   ]
 }

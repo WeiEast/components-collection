@@ -1,5 +1,5 @@
 import './Toast.less';
-import {logger} from '../../utils/utils'
+import info from '../../utils/logger/info'
 export default function () {
-  logger('Toast');
+  info('Toast');
 }
